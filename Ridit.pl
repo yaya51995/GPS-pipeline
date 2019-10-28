@@ -49,7 +49,7 @@ foreach (@line){
    }  
    $p=&ridit(@order_d);
    $result=-log($p);
-   if(/[chromosome|chr](\d+)\s(\d+)/){            
+   if(/chromosome|chr(\d+)\s(\d+)/){            
       print "$1\t$2\t$result\n";
    }
    @d=();
